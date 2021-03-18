@@ -1,4 +1,4 @@
-# Betavision
+# Betavision Coordinator
 
 This ia an app that helps to look up order information, create order form, open order form and send order information to vendor from Smartsheet.
 
