@@ -23,39 +23,6 @@ pm_sheet=smartsheet_client.Sheets.get_sheet('4115641859893124')
 
 user=getpass.getuser()
 
-if user=='yuero':
-    name='Roy Yue'
-    title='Technical Coordinator | Custom Product'
-    email_cc="Andrew.Cotter@arcteryx.com"
-elif user=='cottera':
-    name='Andrew Cotter'
-    title='Technical Lead | Custom Product'
-    email_cc="roy.yue@arcteryx.com"
-elif user=='serbanc':
-    name='Cristian Serban'
-    recipients = ["royyue87@gmail.com", "royyue87@hotmail.com"]
-    title='Decoration Services Coordinator | Custom Product' 
-    email_cc="; ".join(recipients)
-
-
-
-squad={'roy.yue@arcteryx.com':'Roy Yue',
-'andrew.cotter@arcteryx.com':'Andrew Cotter',
-'blair.gorrell@arcteryx.com':'Blair Gorrell',
-'cristian.serban@arcteryx.com':'Cristian Serban',
-'kaley.robinson@arcteryx.com':'Kaley Robinson',
-'adam.hoogeveen@arcteryx.com':'Adam Hoogeveen',
-'daniel.vanderhouwen@arcteryx.com':'Daniel Van Der Houwen',
-'duncan.railton@arcteryx.com':'Duncan Railton',
-'gustavo.ayresnetto@arcteryx.com':'Gustavo Ayres Netto',
-'josh.banks@arcteryx.com':'Josh Banks',
-'kat.redmond@arcteryx.com':'Katherine Redmond',
-'matthew.reale@arcteryx.com':'Matthew Reale',
-'scott.fierbach@arcteryx.com':'Scott Fierbach',
-'kyle.goertzen@arcteryx.com':'Kyle Goertzen',
-'gina.wong@arcteryx.com': 'Gina Wong',
-'gustavo.ayresnetto@amersports.com': 'Gus'
-}
 
 # Put OS column titles and id in a dictionary
 os_sheet_columns = smartsheet_client.Sheets.get_columns(
