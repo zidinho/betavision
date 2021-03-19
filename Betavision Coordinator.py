@@ -7,7 +7,7 @@ import webbrowser
 
 
 # Smartsheet client acess token
-smartsheet_client = smartsheet.Smartsheet('bzrgtgknnud6o9yxfl6k2584ta')
+smartsheet_client = smartsheet.Smartsheet(smartsheet_token)
 
 # Get order submission sheet by ID
 os_sheet=smartsheet_client.Sheets.get_sheet('7385615210702724')
